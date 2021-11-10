@@ -6,9 +6,9 @@ pipeline {
                 sh 'tidy -q -e index.html'
             }
         }
-        stage('Upload to AWS') {
+        stage('Upload to Azure') {
             steps {
-		    sh 'echo "Hello World with AWS creds"'
+		    sh 'echo "Hello World with AZ creds"'
             }
         }
     }
